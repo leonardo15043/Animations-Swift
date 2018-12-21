@@ -12,6 +12,8 @@
 		492FC1F121CD87D80084D624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492FC1EF21CD87D80084D624 /* Main.storyboard */; };
 		492FC1F321CD87DA0084D624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492FC1F221CD87DA0084D624 /* Assets.xcassets */; };
 		492FC1F621CD87DA0084D624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492FC1F421CD87DA0084D624 /* LaunchScreen.storyboard */; };
+		492FC1FF21CD88630084D624 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492FC1FE21CD88630084D624 /* QuartzCore.framework */; };
+		492FC20121CD90760084D624 /* face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 492FC20021CD90760084D624 /* face.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		492FC1F221CD87DA0084D624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		492FC1F521CD87DA0084D624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		492FC1F721CD87DA0084D624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492FC1FE21CD88630084D624 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		492FC20021CD90760084D624 /* face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492FC1FF21CD88630084D624 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				492FC1EA21CD87D80084D624 /* AnimationsSwift */,
 				492FC1E921CD87D80084D624 /* Products */,
+				492FC1FD21CD88630084D624 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +60,7 @@
 		492FC1EA21CD87D80084D624 /* AnimationsSwift */ = {
 			isa = PBXGroup;
 			children = (
+				492FC20021CD90760084D624 /* face.jpg */,
 				492FC1EB21CD87D80084D624 /* AppDelegate.swift */,
 				492FC1ED21CD87D80084D624 /* ViewController.swift */,
 				492FC1EF21CD87D80084D624 /* Main.storyboard */,
@@ -62,6 +69,14 @@
 				492FC1F721CD87DA0084D624 /* Info.plist */,
 			);
 			path = AnimationsSwift;
+			sourceTree = "<group>";
+		};
+		492FC1FD21CD88630084D624 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				492FC1FE21CD88630084D624 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +139,7 @@
 			files = (
 				492FC1F621CD87DA0084D624 /* LaunchScreen.storyboard in Resources */,
 				492FC1F321CD87DA0084D624 /* Assets.xcassets in Resources */,
+				492FC20121CD90760084D624 /* face.jpg in Resources */,
 				492FC1F121CD87D80084D624 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
