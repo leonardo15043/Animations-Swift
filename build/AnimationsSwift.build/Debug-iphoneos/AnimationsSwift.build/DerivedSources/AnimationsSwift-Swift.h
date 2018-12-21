@@ -207,6 +207,7 @@ SWIFT_CLASS("_TtC15AnimationsSwift14ViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified facePicture;
 - (IBAction)animateAction:(UIButton * _Nonnull)sender;
 - (IBAction)crushAnimation:(UIButton * _Nonnull)sender;
+- (IBAction)transparentAnimation:(UIButton * _Nonnull)sender;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

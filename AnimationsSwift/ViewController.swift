@@ -57,6 +57,17 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func transparentAnimation(_ sender: UIButton) {
+        
+        UIView.animate(withDuration: 1.0, animations:{
+            self.facePicture.alpha = 0.0
+        }, completion: {(value: Bool) in
+            self.facePicture.alpha = 1.0
+        })
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
