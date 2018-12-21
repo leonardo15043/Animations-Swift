@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @objc var state = true
     @IBOutlet weak var facePicture: UIImageView!
     
    
@@ -25,7 +27,34 @@ class ViewController: UIViewController {
         animation.duration = 1.0
         //agregamos la animacion a la imagen
         facePicture.layer.add(animation, forKey: "position")
+    
+    }
+    
+    
+
+    @IBAction func crushAnimation(_ sender: UIButton) {
         
+        if(state){
+            //cambiamos de tamaño
+            let resizeAnimation:CABasicAnimation = CABasicAnimation(keyPath:"bounds.size")
+            resizeAnimation.toValue = NSValue(cgSize:CGSize(width: 240, height: 60))
+            resizeAnimation.fillMode = CAMediaTimingFillMode.forwards
+            resizeAnimation.isRemovedOnCompletion = false
+            facePicture.layer.add(resizeAnimation, forKey: "bounds.size")
+            
+            state = false
+            
+        }else{
+
+            let resizeAnimation:CABasicAnimation = CABasicAnimation(keyPath:"bounds.size")
+            resizeAnimation.toValue = NSValue(cgSize:CGSize(width: 340, height: 120))
+            resizeAnimation.fillMode = CAMediaTimingFillMode.forwards
+            resizeAnimation.isRemovedOnCompletion = false
+            facePicture.layer.add(resizeAnimation, forKey: "bounds.size")
+            
+            state = true
+            
+        }
     }
     
     override func viewDidLoad() {

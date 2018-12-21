@@ -19,11 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aER-vt-omk">
-                                <rect key="frame" x="146" y="604" width="83" height="30"/>
+                                <rect key="frame" x="166" y="604" width="43" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Animacion 1"/>
+                                <state key="normal" title="Mover"/>
                                 <connections>
                                     <action selector="animateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEx-Vz-qTL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpo-sK-yEJ">
+                                <rect key="frame" x="159" y="557" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Aplastar"/>
+                                <connections>
+                                    <action selector="crushAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rBQ-QK-fZ6"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="face.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cC5-5G-JAZ">
