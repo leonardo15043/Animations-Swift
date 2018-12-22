@@ -68,6 +68,31 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func curveAnimation(_ sender: UIButton) {
+        
+        let subLayer : CALayer = self.facePicture.layer
+        let thePath : CGMutablePath = CGMutablePath();
+        
+        thePath.move(
+            to: CGPoint(x: 0, y: 500) //Start point
+        )
+        thePath.addCurve(
+            to: CGPoint(x: 300, y: 500), //Endpoint
+            control1: CGPoint(x: 100, y: 200), //Control point 1
+            control2: CGPoint(x: 200, y: 700) //Control point 2
+        );
+        
+        let theAnimation: CAKeyframeAnimation = CAKeyframeAnimation(keyPath:"position")
+        theAnimation.path = thePath
+        theAnimation.duration = 5.0
+        theAnimation.fillMode = CAMediaTimingFillMode.forwards
+        theAnimation.isRemovedOnCompletion = false
+        
+        subLayer.add(theAnimation, forKey: "position")
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

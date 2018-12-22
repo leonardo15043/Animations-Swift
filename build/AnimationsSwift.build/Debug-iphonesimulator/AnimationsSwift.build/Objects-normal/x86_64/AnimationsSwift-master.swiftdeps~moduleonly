@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "68417890f1554b3aab7210c9a436ef3b"
+build_time: [1545451476, 650920000]
+inputs:
+  "/Users/leonardo15043/Documents/GitHub/AnimationsSwift/AnimationsSwift/ViewController.swift": [1545451476, 0]
+  "/Users/leonardo15043/Documents/GitHub/AnimationsSwift/AnimationsSwift/AppDelegate.swift": [1545424984, 0]
